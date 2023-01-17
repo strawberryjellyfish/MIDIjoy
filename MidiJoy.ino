@@ -1,3 +1,13 @@
+/* 
+**  MIDIjoy - joystick based USB MIDI controller for manipulation of 3 CC controls
+**
+**  Hardware: Arduino Pro Micro / LeonardoIntended
+**            3 axis auto centering joystick with control button
+**
+**  strawberryjellyfish.com         
+**  Version: 0.1
+*/
+
 // Required libraries and includes ---------------------------------------------
 #include <Arduino.h>
 #include <debounce.h>
@@ -8,7 +18,7 @@
 
 // Configuration variables ----------------------------------------------------
 
-byte midiCh = 1;                //  MIDI channel to use
+byte midiCh = 1;                //  MIDI channel
 bool isCenterOffset = false;    // Centre mode - if true allows setting of midi values for center position of offset pots
 const int commandSwitch = 7;    // Pin for command switch (used to toggle mode and set centre)
 
